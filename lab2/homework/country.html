@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="d-flex flex-row mt-4 justify-content-between">
+          <div class="d-flex">
+            <h1><%= countryName %></h1>
+            <div class="mx-2">
+              <img class="border" src="<%= flagUrl %>"" height="40px" border="1px" alt="flag"/>
+            </div>
+          </div>
+          <div class="ml-auto">
+            <form action="/" id="go-back" method="GET"></form>
+            <button type="submit" form="go-back" class="btn btn-primary">back</button>
+          </div>
+        </div>
+
+        <hr/>
+        
+        <h3 class="mt-4 mb-4">capital: <strong><%= capital %></strong></h3>
+        <h3 class="mt-4 mb-4">population: <strong><%= population %></strong></h3>
+        <h3 class="mt-4 mb-4">
+          weather in <%= capital %>: 
+          <img class="ml-2 justify-content-center align-text-top inverts" src="http://openweathermap.org/img/wn/<%= weather %>@2x.png" height="40px" alt="icon"/> 
+          (<%= weatherDescription %>, <%= temperature %>)
+        
+        </h3>
+        <h3 class="mt-4 mb-4">measurement: <strong><%= measurement %></strong></h3>
+        <h3 class="mt-4 mb-4">results: <strong><%= measurementData %></strong></h3>
+      </div>
+    </div>
+  </body>
+</html>
