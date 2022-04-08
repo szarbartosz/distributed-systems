@@ -1,1 +1,9 @@
 .vscode
+/lab1/homework/__pychache__
+/lab2/ex1/.idea
+/lab2/ex1/lab2.iml
+/lab2/ex1/target
+/lab2/src
+/lab2/.idea
+/lab2/homework/node_modules
+/lab2/homework/package-lock.json
