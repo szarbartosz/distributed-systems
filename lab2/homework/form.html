@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="my-4">Distributed systems - lab 2</h3>
+      <form action="/" method="POST">
+        <div class="mb-3">
+          <label>Location</label>
+          <select name="location" class="form-select">
+            <option class="bg-primary" value="<%= location %>"><%= location %></option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Germany">Germany</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+            <option value="Finland">Finland</option>
+            <option value="Kenya">Kenya</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>Type of measurement</label>
+          <select name="measurement" class="form-select">
+            <option value="Air pollution">Air pollution</option>
+            <option value="Exchange rate">Exchange rate</option>
+          </select>
+        </div>
+        <div class="form-group mb-3">
+          <label>Start date</label>
+          <input type="date" class="form-control" value="2022-03-10" name="startDate">
+        </div>
+        <div class="form-group mb-3">
+          <label>End date</label>
+          <input type="date" class="form-control" value="2022-03-14" name="endDate">
+        </div>
+        <div class="d-grid mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      </div>
+  </body>
+</html>
