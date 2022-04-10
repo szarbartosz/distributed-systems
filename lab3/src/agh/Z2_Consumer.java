@@ -1,8 +1,16 @@
-import com.rabbitmq.client.*;
+package agh;
 
+import com.rabbitmq.client.AMQP;
+import com.rabbitmq.client.BuiltinExchangeType;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.Consumer;
+import com.rabbitmq.client.DefaultConsumer;
+import com.rabbitmq.client.Envelope;
 import java.io.IOException;
 
-public class Z2_Consumer_2 {
+public class Z2_Consumer {
 
     public static void main(String[] argv) throws Exception {
 
@@ -21,7 +29,7 @@ public class Z2_Consumer_2 {
 
         // queue & bind
         String queueName = channel.queueDeclare().getQueue();
-        channel.queueBind(queueName, EXCHANGE_NAME, "jerzy");
+        channel.queueBind(queueName, EXCHANGE_NAME, "kiler");
         System.out.println("created queue: " + queueName);
 
         // consumer (message handling)
