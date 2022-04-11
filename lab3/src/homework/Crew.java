@@ -35,7 +35,6 @@ public class Crew {
         };
 
         channel.basicConsume(crewName + "_queue", false, consumer);
-        channel.basicConsume("admin_queue", false, consumer);
 
         while (true) {
             System.out.println("Zamów zasób: ");

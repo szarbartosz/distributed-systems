@@ -27,7 +27,7 @@ public class Supplier {
         while (true) {
             System.out.println("Nazwa sprzętu: ");
             String product = br.readLine();
-            if (product.equals(";;")) {
+            if (product.equals("/zakoncz")) {
                 break;
             }
             products.add(product);
