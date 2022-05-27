@@ -1,0 +1,14 @@
+wihajster=wihajsters/wihajster:tcp -h localhost -p 10000:udp -h localhost -p 10000
+blackCoffeeMachine=coffeeMachines/blackCoffeeMachine:tcp -h localhost -p 10000:udp -h localhost -p 10000
+milkCoffeeMachine=coffeeMachines/milkCoffeeMachine:tcp -h localhost -p 10000:udp -h localhost -p 10000
+
+# END DEVICE DEFINITIONS
+
+# turn off warnings about server, we'll handle this our own way
+Ice.Warn.Connections=0
+
+# turn off retries - we'll handle this our own way
+Ice.RetryIntervals=-1
+
+# shorten retry time a bit
+Ice.Default.InvocationTimeout=1000
