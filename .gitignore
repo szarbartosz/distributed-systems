@@ -49,3 +49,15 @@ lab5/SmartHome/client/devices_ice.py
 lab5/SmartHome/client/slice
 lab5/SmartHome/client/handlers/*/__init__.py
 lab5/SmartHome/client/handlers/__init__.py
+lab5/ReverseProxy/config.py
+lab5/ReverseProxy/helloworld_pb2.py
+lab5/ReverseProxy/helloworld_pb2_grpc.py
+lab5/ReverseProxy/weather_pb2.py
+lab5/ReverseProxy/weather_pb2_grpc.py
+lab5/ReverseProxy/nginx-1.22.0/contrib
+lab5/ReverseProxy/nginx-1.22.0/docs
+lab5/ReverseProxy/nginx-1.22.0/html
+lab5/ReverseProxy/nginx-1.22.0/logs
+lab5/ReverseProxy/nginx-1.22.0/temp
+lab5/ReverseProxy/nginx-1.22.0/nginx.exe
+lab5/ReverseProxy/.idea
