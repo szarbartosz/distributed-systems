@@ -2,6 +2,10 @@ wihajster=wihajsters/wihajster:tcp -h localhost -p 10000:udp -h localhost -p 100
 blackCoffeeMachine=coffeeMachines/blackCoffeeMachine:tcp -h localhost -p 10000:udp -h localhost -p 10000
 milkCoffeeMachine=coffeeMachines/milkCoffeeMachine:tcp -h localhost -p 10000:udp -h localhost -p 10000
 
+wihajster2=wihajsters/wihajster2:tcp -h localhost -p 10002:udp -h localhost -p 10002
+blackCoffeeMachine2=coffeeMachines/blackCoffeeMachine2:tcp -h localhost -p 10002:udp -h localhost -p 10002
+milkCoffeeMachine2=coffeeMachines/milkCoffeeMachine2:tcp -h localhost -p 10002:udp -h localhost -p 10002
+
 # END DEVICE DEFINITIONS
 
 # turn off warnings about server, we'll handle this our own way
