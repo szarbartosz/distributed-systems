@@ -61,3 +61,7 @@ lab5/ReverseProxy/nginx-1.22.0/logs
 lab5/ReverseProxy/nginx-1.22.0/temp
 lab5/ReverseProxy/nginx-1.22.0/nginx.exe
 lab5/ReverseProxy/.idea
+lab6/zookeeper/.idea
+lab6/zookeeper/src/main/resources/logback.xml
+lab6/zookeeper/target
+lab6/apache-zookeeper-3.8.0-bin
