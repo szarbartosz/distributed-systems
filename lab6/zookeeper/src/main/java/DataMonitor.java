@@ -63,7 +63,9 @@ public class DataMonitor implements AsyncCallback.StatCallback, AsyncCallback.Al
     public void processResult(int i, String s, Object o, int i1) {
         if (lastCount != i1) {
             lastCount = i1;
-            System.out.println("zNode tree change detected - current number of ancestors: " + i1);
+            if (i1 > -1){
+                System.out.println("zNode tree change detected - current number of ancestors: " + i1);
+            }
         }
 
         zooKeeper.getAllChildrenNumber(zNode, this, null);
